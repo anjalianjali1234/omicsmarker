@@ -1,0 +1,32 @@
+seed: 42
+targets:
+- ER
+labels:
+  ER: ER
+sample_type: Sample_Tumor_Normal
+tumour_value: Tumor
+rna_scale: log
+batch: null
+min_class: 10
+outer_folds: 3
+inner_folds: 2
+features:
+  rna: 20
+  protein: 20
+models:
+- xgboost
+- tensorflow
+xgboost:
+  max_depth:
+  - 2
+  n_estimators:
+  - 15
+  learning_rate:
+  - 0.2
+tensorflow:
+  units:
+  - 16
+  dropout:
+  - 0.3
+epochs: 4
+mongo_variable: OM_MONGO_URI

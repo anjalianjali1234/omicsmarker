@@ -1,0 +1,13 @@
+{
+  "omicsmarker.proteomics_table": "om_data/cptac/proteomics.parquet",
+  "omicsmarker.transcriptomics_table": "om_data/cptac/transcriptomics.parquet",
+  "omicsmarker.clinical_table": "om_data/cptac/clinical.parquet",
+  "omicsmarker.run_config": "config/run.yaml",
+  "omicsmarker.git_commit": "source-archive",
+  "omicsmarker.targets": [
+    "ER",
+    "PR",
+    "HER2",
+    "PAM50"
+  ]
+}
