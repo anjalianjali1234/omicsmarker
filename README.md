@@ -45,4 +45,8 @@ cwltool --validate cwl/sage_search.cwl
 
 Edit full.json to use absolute paths and a Git revision. For raw search set run_raw_search to true, supply raw_files, fasta and sage_config. Use hallmark_gmt for a local gene-set file. Versions of published images can be supplied through analysis_image and proteomics_image. The standalone CWL task takes fasta and config File objects and an array of mzML File objects. Set OM_MONGO_URI in the training process to enable database tracking. Every successful target run writes run_record.json.
 
-[Data sources and limitations](docs/data.md) · [Example metrics](docs/results.md) · [MIT license](LICENSE)
+[Data sources and limitations](docs/data.md) · [Example metrics](docs/results.md)
+
+## Copyright
+
+Copyright (c) 2026 OmicsMarker contributors. All rights reserved. Contact the repository owner for permission to reuse the original project material.
