@@ -172,4 +172,8 @@ For Cromwell, supply a configured Docker backend and run `java -jar "$CROMWELL_J
 
 The optional raw-search branch searches independent PRIDE breast cancer cell-line spectra with Sage and compares gene-level abundance ranks with the tumour cohort. The studies share gene symbols but have different samples. Build the image with `docker build -f docker/proteomics.Dockerfile -t omicsmarker-proteomics:dev .`, set `omicsmarker.run_raw_search` to true in the WDL inputs and supply `omicsmarker.raw_files`, `omicsmarker.fasta`, and `omicsmarker.sage_config`. Outputs include a protein matrix and per-file search QC. The standalone CWL search instead accepts mzML files. [Raw data and reference FASTA sources](docs/data.md).
 
-For optional Hallmark enrichment, supply a local GMT gene-set file with `omicsmarker integrate --gmt` alongside its required arguments. For optional database tracking, set `OM_MONGO_URI` in the training environment. [MongoDB example query](docs/queries.md) · [MIT license](LICENSE)
+For optional Hallmark enrichment, supply a local GMT gene-set file with `omicsmarker integrate --gmt` alongside its required arguments. For optional database tracking, set `OM_MONGO_URI` in the training environment. [MongoDB example query](docs/queries.md)
+
+## Copyright
+
+Copyright (c) 2026 OmicsMarker contributors. All rights reserved. Contact the repository owner for permission to reuse the original project material.
