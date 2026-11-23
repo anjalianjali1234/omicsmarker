@@ -1,0 +1,16 @@
+seed: 42
+targets: [ER, PR, HER2, PAM50]
+labels: {ER: ER, PR: PR, HER2: HER2, PAM50: PAM50}
+sample_type: Sample_Tumor_Normal
+tumour_value: Tumor
+rna_scale: linear
+batch: TMT_PLEX
+min_class: 10
+outer_folds: 5
+inner_folds: 3
+features: {rna: 2000, protein: 1000}
+models: [xgboost, tensorflow]
+xgboost: {max_depth: [3, 5], n_estimators: [200, 500], learning_rate: [0.05, 0.1]}
+tensorflow: {units: [64, 128], dropout: [0.3, 0.5]}
+epochs: 300
+mongo_variable: OM_MONGO_URI

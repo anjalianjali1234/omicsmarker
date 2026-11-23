@@ -1,0 +1,10 @@
+{
+  "omicsmarker.proteomics_table": "runs/demo/input/proteomics.parquet",
+  "omicsmarker.transcriptomics_table": "runs/demo/input/transcriptomics.parquet",
+  "omicsmarker.clinical_table": "runs/demo/input/clinical.parquet",
+  "omicsmarker.run_config": "config/test.yaml",
+  "omicsmarker.git_commit": "source-archive",
+  "omicsmarker.targets": [
+    "ER"
+  ]
+}
